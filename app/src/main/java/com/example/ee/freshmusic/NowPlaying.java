@@ -2,46 +2,40 @@ package com.example.ee.freshmusic;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
-import android.media.MediaPlayer;
-import android.support.v7.app.ActionBar;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.os.Handler;
-
+import android.support.v7.app.ActionBar;
+import android.support.v7.app.AppCompatActivity;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
 
 
-
 /**
  * An example full-screen activity that shows and hides the system UI (i.e.
  * status bar and navigation/system bar) with user interaction.
  */
-public class NowPlaying extends AppCompatActivity{
-
-    SongItems songs;
-
+public class NowPlaying extends AppCompatActivity {
 
     /**
      * Whether or not the system UI should be auto-hidden after
      * {@link #AUTO_HIDE_DELAY_MILLIS} milliseconds.
      */
     private static final boolean AUTO_HIDE = true;
-
     /**
      * If {@link #AUTO_HIDE} is set, the number of milliseconds to wait after
      * user interaction before hiding the system UI.
      */
     private static final int AUTO_HIDE_DELAY_MILLIS = 3000;
-
     /**
      * Some older devices needs a small delay between UI widget updates
      * and a change of the status and navigation bar.
      */
     private static final int UI_ANIMATION_DELAY = 300;
     private final Handler mHideHandler = new Handler();
+    SongItems songs;
+    int playOrPause = 0; //we use 0 for play and 1 for pause
     private View mContentView;
     private final Runnable mHidePart2Runnable = new Runnable() {
         @SuppressLint("InlinedApi")
@@ -97,8 +91,32 @@ public class NowPlaying extends AppCompatActivity{
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         setContentView(R.layout.activity_now_playing);
+
+
+        ImageButton playbutton = findViewById(R.id.play);
+        playbutton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ImageButton buttonPlay = findViewById(R.id.play);
+                if (playOrPause == 0) {
+                    //pause
+                    playOrPause = 1;
+                    buttonPlay.setImageResource(R.drawable.ic_pause_black_24dp);
+
+                } else {
+                    //play
+                    playOrPause = 0;
+                    buttonPlay.setImageResource(R.drawable.ic_play_arrow);
+
+
+                }
+
+
+            }
+
+
+        });
 
         mVisible = true;
         mControlsView = findViewById(R.id.fullscreen_content_controls);
@@ -124,16 +142,16 @@ public class NowPlaying extends AppCompatActivity{
             @Override
             public void onClick(View v) {
                 // ADD your action here
-                Intent gotoplaylist = new Intent(getApplicationContext(),Playlists.class);
+                Intent gotoplaylist = new Intent(getApplicationContext(), Playlists.class);
                 startActivity(gotoplaylist);
-                }
+            }
         });
 
         LinearLayout gotoalbum = findViewById(R.id.genrebutton);
         gotoalbum.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent gotogenres = new Intent(getApplicationContext(),Albums.class);
+                Intent gotogenres = new Intent(getApplicationContext(), AlbumsActivity.class);
                 startActivity(gotogenres);
             }
         });
@@ -192,26 +210,6 @@ public class NowPlaying extends AppCompatActivity{
         mHideHandler.postDelayed(mHideRunnable, delayMillis);
 
     }
-    int playOrPause =0; //we use 0 for play and 1 for pause
-
-    public void startPlaying(View view) {
-
-            ImageButton buttonPlay = findViewById(R.id.play);
-            if(playOrPause == 0 ){
-                //pause
-                playOrPause = 1;
-                buttonPlay.setImageResource(R.drawable.ic_pause_black_24dp);
-
-            } else {
-                //play
-                playOrPause = 0;
-                buttonPlay.setImageResource(R.drawable.ic_play_arrow);
 
 
-        }
-    }
-
-    public void back(View view) {
-        finish();
-    }
 }

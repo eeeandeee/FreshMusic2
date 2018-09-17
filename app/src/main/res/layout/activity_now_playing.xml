@@ -14,13 +14,13 @@
              track, (previous, play and next) buttons, Artist info button,
              (chart, download and purchase) buttons. -->
         <RelativeLayout
+            android:id="@+id/view_1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/main_screen_left_margin"
-            android:layout_marginStart="@dimen/main_screen_left_margin"
-            android:layout_marginRight="@dimen/main_screen_right_margin"
             android:layout_marginEnd="@dimen/main_screen_right_margin"
-            android:id="@+id/view_1">
+            android:layout_marginLeft="@dimen/main_screen_left_margin"
+            android:layout_marginRight="@dimen/main_screen_right_margin"
+            android:layout_marginStart="@dimen/main_screen_left_margin">
 
             <ImageView
                 android:id="@+id/fullscreen_content"
@@ -37,15 +37,15 @@
                 android:src="@drawable/ic_action_user" />
 
             <TextView
-                android:layout_marginLeft="@dimen/artiste_track_txtleftmgn"
-                android:paddingTop="@dimen/artiste_name_txttoppadn"
                 android:id="@+id/Artiste_Name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/fullscreen_content"
+                android:layout_marginLeft="@dimen/artiste_track_txtleftmgn"
+                android:paddingTop="@dimen/artiste_name_txttoppadn"
                 android:text="@string/artiste_name"
-                android:textSize="@dimen/artiste_track_txtsize"
-                android:textColor="@color/white_background"/>
+                android:textColor="@color/white_background"
+                android:textSize="@dimen/artiste_track_txtsize" />
 
 
             <ImageView
@@ -55,59 +55,39 @@
                 android:layout_below="@id/artiste_name"
                 android:src="@drawable/ic_action_record" />
 
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="end"
-                android:layout_marginLeft="@dimen/dummy_button_paddingleft"
-                android:orientation="vertical">
-
-                <ImageButton
-                    android:id="@+id/optionmenu"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/ic_keyboard_backspace_black_24dp"
-                    android:layout_marginTop="13dp"
-                    android:layout_gravity="bottom"
-                    android:background="@android:color/background_dark"
-                    android:onClick="back"/>
-            </LinearLayout>
-
             <TextView
-                android:layout_marginLeft="@dimen/artiste_track_txtleftmgn"
-                android:paddingTop="@dimen/artiste_name_txttoppadn"
                 android:id="@+id/Artiste_Track"
-                android:text="@string/track_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/artiste_name"
+                android:layout_marginLeft="@dimen/artiste_track_txtleftmgn"
+                android:paddingTop="@dimen/artiste_name_txttoppadn"
                 android:src="@drawable/ic_action_record"
-                android:textSize="@dimen/artiste_track_txtsize"
-                android:textColor="@color/white_background"/>
+                android:text="@string/track_name"
+                android:textColor="@color/white_background"
+                android:textSize="@dimen/artiste_track_txtsize" />
 
             <ImageButton
-                android:background="@color/black_background"
                 android:id="@+id/previous"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/artiste_track"
                 android:layout_marginTop="@dimen/pr_pl_next_top_margin"
+                android:background="@color/black_background"
                 android:src="@drawable/ic_skip_previous" />
 
             <ImageButton
-                android:onClick="startPlaying"
-                android:background="@color/black_background"
                 android:id="@+id/play"
-                android:tint="@color/white_background"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/artiste_track"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="@dimen/pr_pl_next_top_margin"
-                android:src="@drawable/ic_play_arrow" />
+                android:background="@color/black_background"
+                android:src="@drawable/ic_play_arrow"
+                android:tint="@color/white_background" />
 
             <ImageButton
-                android:background="@color/black_background"
                 android:id="@+id/next"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -115,35 +95,36 @@
                 android:layout_alignParentRight="true"
                 android:layout_below="@+id/artiste_track"
                 android:layout_marginTop="@dimen/pr_pl_next_top_margin"
+                android:background="@color/black_background"
                 android:src="@drawable/ic_skip_next" />
 
             <Button
                 android:id="@+id/artiste_info"
                 android:layout_width="@dimen/artiste_info_button_width"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/artiste_info_button_topmargin"
-                android:layout_marginBottom="@dimen/artiste_info_button_bottommargin"
                 android:layout_below="@id/next"
                 android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/artiste_info_button_bottommargin"
+                android:layout_marginTop="@dimen/artiste_info_button_topmargin"
                 android:drawableEnd="@drawable/ic_action_info"
                 android:drawableRight="@drawable/ic_action_info"
                 android:text="Artiste info." />
 
 
             <ImageView
-                android:layout_marginTop="@dimen/pr_pl_next_top_margin"
                 android:id="@+id/chart"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/ic_action_bargraph"
-                android:layout_alignParentBottom="true"/>
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="@dimen/pr_pl_next_top_margin"
+                android:src="@drawable/ic_action_bargraph" />
 
             <ImageView
                 android:id="@+id/download"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
                 android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
                 android:layout_marginTop="@dimen/pr_pl_next_top_margin"
                 android:src="@drawable/ic_action_download" />
 
@@ -151,10 +132,10 @@
                 android:id="@+id/purchase"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentRight="true"
                 android:layout_marginTop="@dimen/pr_pl_next_top_margin"
-                android:layout_alignParentBottom="true"
                 android:src="@drawable/ic_credit_card" />
 
         </RelativeLayout>
@@ -180,40 +161,41 @@
             tools:ignore="UselessParent">
 
             <LinearLayout
+                android:id="@+id/albumbutton"
                 android:layout_width="@dimen/all_zero_dps"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
                 android:layout_weight="1"
-                android:paddingLeft="45dp"
-                android:id="@+id/albumbutton">
-
-                <ImageView
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:src="@drawable/album_icon" />
-
-                <TextView
-                android:id="@+id/dummy_button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
-                android:paddingLeft="@dimen/dummy_button_paddingleft"
-                android:text="@string/albums_text"
-                android:textColor="@color/white_background" />
-
-        </LinearLayout>
-            <LinearLayout
-                android:layout_width="@dimen/all_zero_dps"
-                android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:paddingLeft="66dp"
-                android:layout_weight="1"
-                android:id="@+id/genrebutton">
+                android:paddingLeft="45dp">
 
                 <ImageView
                     android:layout_width="50dp"
                     android:layout_height="50dp"
-                    android:src="@drawable/ic_view_module"/>
+                    android:src="@drawable/album_icon" />
+
+                <TextView
+                    android:id="@+id/dummy_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:paddingLeft="@dimen/dummy_button_paddingleft"
+                    android:text="@string/albums_text"
+                    android:textColor="@color/white_background" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/genrebutton"
+                android:layout_width="@dimen/all_zero_dps"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingLeft="66dp">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/ic_view_module" />
 
                 <TextView
                     android:id="@+id/genre_button"
@@ -227,12 +209,12 @@
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/buttonplaylist"
                 android:layout_width="@dimen/all_zero_dps"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
                 android:layout_weight="1"
-                android:paddingLeft="66dp"
-                android:id="@+id/buttonplaylist">
+                android:orientation="vertical"
+                android:paddingLeft="66dp">
 
                 <ImageView
                     android:layout_width="50dp"

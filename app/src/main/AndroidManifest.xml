@@ -18,13 +18,19 @@
         </activity>
         <activity
             android:name=".Playlists"
-            android:label="@string/playlist" />
+            android:label="@string/playlist"
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".NowPlaying"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/title_activity_now_playing"
+            android:parentActivityName=".Playlists"
             android:theme="@style/FullscreenTheme" />
-        <activity android:name=".Albums" />
+        <activity
+            android:name=".AlbumsActivity"
+            android:label="@string/albums_text"
+            android:parentActivityName=".AlbumsActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
     </application>
 
 </manifest>

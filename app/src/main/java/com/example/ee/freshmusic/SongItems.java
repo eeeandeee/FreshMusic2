@@ -7,7 +7,7 @@ public class SongItems {
     private String Artistename;
     private int AlbumArt;
 
-    public SongItems (String TrackTitle, String ArtisteName, int TrackCover ) {
+    public SongItems(String TrackTitle, String ArtisteName, int TrackCover) {
         TrackId = TrackTitle;
         Artistename = ArtisteName;
         AlbumArt = TrackCover;
@@ -18,6 +18,7 @@ public class SongItems {
     public String getArtisteName() {
         return Artistename;
     }
+
     /**
      * Get the TrackTitle for the track.
      */
@@ -29,6 +30,6 @@ public class SongItems {
      * Get the AlbumCover for the track.
      */
     public int TrackCover() {
-         return AlbumArt;
+        return AlbumArt;
     }
 }

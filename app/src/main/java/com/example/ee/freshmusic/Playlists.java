@@ -1,24 +1,22 @@
 package com.example.ee.freshmusic;
 
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
-import android.view.View;
-import android.widget.AdapterView;
 import android.widget.ListView;
 
 import java.util.ArrayList;
 
 
-public class Playlists extends AppCompatActivity implements SongListAdapter.SongClickListener {
+public class Playlists extends Activity implements SongListAdapter.SongClickListener {
 
-    ArrayList<SongItems> songs;
 
     ArrayList<SongItems> SongItems = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        setTheme(android.R.style.Theme_DeviceDefault_Light);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.my_playlists);
 
@@ -45,6 +43,7 @@ public class Playlists extends AppCompatActivity implements SongListAdapter.Song
         listView.setAdapter(Adapter);
 
     }
+
     @Override
     public void songClicked(int position) {
 

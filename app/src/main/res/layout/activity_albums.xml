@@ -1,310 +1,309 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".Albums">
+    android:orientation="vertical"
 
-        <ImageButton
-            android:onClick="previousActivity"
-            android:id="@+id/imageButton2"
-            android:layout_width="32dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="8dp"
-            android:layout_marginTop="6dp"
-            android:background="@color/colorPrimary"
-            android:tint="@android:color/black"
-            android:elevation="4dp"
-            android:src="@drawable/ic_keyboard_backspace_black_24dp"/>
+    tools:context=".AlbumsActivity">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:orientation="horizontal">
+    <ImageButton
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_margin="@dimen/pr_pl_next_top_margin"
-                android:layout_weight="1"
-                android:background="#000000"
-                android:orientation="vertical"
-                android:paddingBottom="@dimen/pr_pl_next_top_margin"
-                android:paddingTop="@dimen/pr_pl_next_top_margin">
+        android:id="@+id/imageButton2"
+        android:layout_width="32dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="6dp"
+        android:background="@color/colorPrimary"
+        android:elevation="4dp"
+        android:src="@drawable/ic_keyboard_backspace_black_24dp"
+        android:tint="@android:color/black" />
 
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:src="@drawable/colbiecalilat_albumart" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Colbie Calilat"
-                    android:textAlignment="center"
-                    android:textColor="@color/white_background" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="2 Songs"
-                    android:textAlignment="center"
-                    android:textColor="@color/white_background" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_margin="@dimen/pr_pl_next_top_margin"
-                android:layout_weight="1"
-                android:background="#000000"
-                android:orientation="vertical"
-                android:paddingBottom="@dimen/pr_pl_next_top_margin"
-                android:paddingTop="@dimen/pr_pl_next_top_margin">
-
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:src="@drawable/colbiecalilat_albumart" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Colbie Calilat"
-                    android:textAlignment="center"
-                    android:textColor="@color/white_background" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="2 Songs"
-                    android:textAlignment="center"
-                    android:textColor="@color/white_background" />
-
-            </LinearLayout>
-        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_margin="@dimen/pr_pl_next_top_margin"
             android:layout_weight="1"
-            android:orientation="horizontal">
+            android:background="#000000"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/pr_pl_next_top_margin"
+            android:paddingTop="@dimen/pr_pl_next_top_margin">
 
-            <LinearLayout
+            <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_margin="@dimen/pr_pl_next_top_margin"
                 android:layout_weight="1"
-                android:background="#000000"
-                android:orientation="vertical"
-                android:paddingBottom="@dimen/pr_pl_next_top_margin"
-                android:paddingTop="@dimen/pr_pl_next_top_margin">
+                android:src="@drawable/colbiecalilat_albumart" />
 
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:src="@drawable/colbiecalilat_albumart" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Colbie Calilat"
-                    android:textAlignment="center"
-                    android:textColor="@color/white_background" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="2 Songs"
-                    android:textAlignment="center"
-                    android:textColor="@color/white_background" />
-
-            </LinearLayout>
-
-            <LinearLayout
+            <TextView
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_margin="@dimen/pr_pl_next_top_margin"
-                android:layout_weight="1"
-                android:background="#000000"
-                android:orientation="vertical"
-                android:paddingBottom="@dimen/pr_pl_next_top_margin"
-                android:paddingTop="@dimen/pr_pl_next_top_margin">
+                android:layout_height="wrap_content"
+                android:text="Colbie Calilat"
+                android:textAlignment="center"
+                android:textColor="@color/white_background" />
 
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:src="@drawable/colbiecalilat_albumart" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Colbie Calilat"
-                    android:textAlignment="center"
-                    android:textColor="@color/white_background" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="2 Songs"
-                    android:textAlignment="center"
-                    android:textColor="@color/white_background" />
-
-            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2 Songs"
+                android:textAlignment="center"
+                android:textColor="@color/white_background" />
 
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_margin="@dimen/pr_pl_next_top_margin"
             android:layout_weight="1"
-            android:orientation="horizontal">
+            android:background="#000000"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/pr_pl_next_top_margin"
+            android:paddingTop="@dimen/pr_pl_next_top_margin">
 
-            <LinearLayout
+            <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_margin="@dimen/pr_pl_next_top_margin"
                 android:layout_weight="1"
-                android:background="#000000"
-                android:orientation="vertical"
-                android:paddingBottom="@dimen/pr_pl_next_top_margin"
-                android:paddingTop="@dimen/pr_pl_next_top_margin">
+                android:src="@drawable/colbiecalilat_albumart" />
 
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:src="@drawable/colbiecalilat_albumart" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Colbie Calilat"
+                android:textAlignment="center"
+                android:textColor="@color/white_background" />
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Colbie Calilat"
-                    android:textAlignment="center"
-                    android:textColor="@color/white_background" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2 Songs"
+                android:textAlignment="center"
+                android:textColor="@color/white_background" />
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="2 Songs"
-                    android:textAlignment="center"
-                    android:textColor="@color/white_background" />
+        </LinearLayout>
+    </LinearLayout>
 
-            </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal">
 
-            <LinearLayout
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/pr_pl_next_top_margin"
+            android:layout_weight="1"
+            android:background="#000000"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/pr_pl_next_top_margin"
+            android:paddingTop="@dimen/pr_pl_next_top_margin">
+
+            <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_margin="@dimen/pr_pl_next_top_margin"
                 android:layout_weight="1"
-                android:background="#000000"
-                android:orientation="vertical"
-                android:paddingBottom="@dimen/pr_pl_next_top_margin"
-                android:paddingTop="@dimen/pr_pl_next_top_margin">
+                android:src="@drawable/colbiecalilat_albumart" />
 
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:src="@drawable/colbiecalilat_albumart" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Colbie Calilat"
+                android:textAlignment="center"
+                android:textColor="@color/white_background" />
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Colbie Calilat"
-                    android:textAlignment="center"
-                    android:textColor="@color/white_background" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="2 Songs"
-                    android:textAlignment="center"
-                    android:textColor="@color/white_background" />
-
-            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2 Songs"
+                android:textAlignment="center"
+                android:textColor="@color/white_background" />
 
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_margin="@dimen/pr_pl_next_top_margin"
             android:layout_weight="1"
-            android:orientation="horizontal">
+            android:background="#000000"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/pr_pl_next_top_margin"
+            android:paddingTop="@dimen/pr_pl_next_top_margin">
 
-            <LinearLayout
+            <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_margin="@dimen/pr_pl_next_top_margin"
                 android:layout_weight="1"
-                android:background="#000000"
-                android:orientation="vertical"
-                android:paddingBottom="@dimen/pr_pl_next_top_margin"
-                android:paddingTop="@dimen/pr_pl_next_top_margin">
+                android:src="@drawable/colbiecalilat_albumart" />
 
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:src="@drawable/colbiecalilat_albumart" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Colbie Calilat"
-                    android:textAlignment="center"
-                    android:textColor="@color/white_background" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="2 Songs"
-                    android:textAlignment="center"
-                    android:textColor="@color/white_background" />
-
-            </LinearLayout>
-
-            <LinearLayout
+            <TextView
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_margin="@dimen/pr_pl_next_top_margin"
-                android:layout_weight="1"
-                android:background="#000000"
-                android:orientation="vertical"
-                android:paddingBottom="@dimen/pr_pl_next_top_margin"
-                android:paddingTop="@dimen/pr_pl_next_top_margin">
+                android:layout_height="wrap_content"
+                android:text="Colbie Calilat"
+                android:textAlignment="center"
+                android:textColor="@color/white_background" />
 
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:src="@drawable/colbiecalilat_albumart" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Colbie Calilat"
-                    android:textAlignment="center"
-                    android:textColor="@color/white_background" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="2 Songs"
-                    android:textAlignment="center"
-                    android:textColor="@color/white_background" />
-
-            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2 Songs"
+                android:textAlignment="center"
+                android:textColor="@color/white_background" />
 
         </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/pr_pl_next_top_margin"
+            android:layout_weight="1"
+            android:background="#000000"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/pr_pl_next_top_margin"
+            android:paddingTop="@dimen/pr_pl_next_top_margin">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/colbiecalilat_albumart" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Colbie Calilat"
+                android:textAlignment="center"
+                android:textColor="@color/white_background" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2 Songs"
+                android:textAlignment="center"
+                android:textColor="@color/white_background" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/pr_pl_next_top_margin"
+            android:layout_weight="1"
+            android:background="#000000"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/pr_pl_next_top_margin"
+            android:paddingTop="@dimen/pr_pl_next_top_margin">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/colbiecalilat_albumart" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Colbie Calilat"
+                android:textAlignment="center"
+                android:textColor="@color/white_background" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2 Songs"
+                android:textAlignment="center"
+                android:textColor="@color/white_background" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/pr_pl_next_top_margin"
+            android:layout_weight="1"
+            android:background="#000000"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/pr_pl_next_top_margin"
+            android:paddingTop="@dimen/pr_pl_next_top_margin">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/colbiecalilat_albumart" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Colbie Calilat"
+                android:textAlignment="center"
+                android:textColor="@color/white_background" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2 Songs"
+                android:textAlignment="center"
+                android:textColor="@color/white_background" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/pr_pl_next_top_margin"
+            android:layout_weight="1"
+            android:background="#000000"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/pr_pl_next_top_margin"
+            android:paddingTop="@dimen/pr_pl_next_top_margin">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/colbiecalilat_albumart" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Colbie Calilat"
+                android:textAlignment="center"
+                android:textColor="@color/white_background" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2 Songs"
+                android:textAlignment="center"
+                android:textColor="@color/white_background" />
+
+        </LinearLayout>
+
+    </LinearLayout>
 
 </LinearLayout>
